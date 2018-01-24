@@ -1,0 +1,1 @@
+Add-DnsServerForwarder -IPAddress 192.168.137.126
