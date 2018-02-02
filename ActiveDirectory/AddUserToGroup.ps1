@@ -1,4 +1,4 @@
-Import-Module ActveDirectory
+Import-Module ActiveDirectory
 
 $User=Get-ADUser -Identity GlenJhon
 
