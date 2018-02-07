@@ -2,15 +2,15 @@ install-windowsfeature AD-Domain-Services
 
 Import-Module ADDSDeployment
 
-Install-ADDSForest
--CreateDnsDelegation:$false
--DatabasePath "C:\Windows\NTDS"
--DomainMode "Win2012R2"
--DomainName "Litware.com"
--DomainNetbiosName "Litware"
--ForestMode "Win2012R2"
--InstallDns:$true
--LogPath "C:\Windows\NTDS"
--NoRebootOnCompletion:$false
--SysvolPath "C:\Windows\SYSVOL"
+Install-ADDSForest `
+-CreateDnsDelegation:$false `
+-DatabasePath "C:\Windows\NTDS" `
+-DomainMode "Win2012R2" `
+-DomainName "Litware.com" `
+-DomainNetbiosName "Litware" `
+-ForestMode "Win2012R2" `
+-InstallDns:$true `
+-LogPath "C:\Windows\NTDS" `
+-NoRebootOnCompletion:$false `
+-SysvolPath "C:\Windows\SYSVOL" `
 -Force:$true
